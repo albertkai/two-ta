@@ -4,11 +4,18 @@
     <list default="true" id="d537d22d-95be-4339-a676-747a687aca5e" name="Default" comment="" />
     <ignored path="twota.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="d537d22d-95be-4339-a676-747a687aca5e" time="1371167131926" ignored="false" />
-    <file path="/dummy.xml" changelist="d537d22d-95be-4339-a676-747a687aca5e" time="1371167168404" ignored="false" />
-    <file path="/main.scss" changelist="d537d22d-95be-4339-a676-747a687aca5e" time="1371171709305" ignored="false" />
+    <file path="/index.html" changelist="d537d22d-95be-4339-a676-747a687aca5e" time="1371490747108" ignored="false" />
+    <file path="/dummy.xml" changelist="d537d22d-95be-4339-a676-747a687aca5e" time="1371481965772" ignored="false" />
+    <file path="/main.scss" changelist="d537d22d-95be-4339-a676-747a687aca5e" time="1371491695852" ignored="false" />
     <file path="/fonts.scss" changelist="d537d22d-95be-4339-a676-747a687aca5e" time="1371166461378" ignored="false" />
     <file path="/normalize.css" changelist="d537d22d-95be-4339-a676-747a687aca5e" time="1371162122977" ignored="false" />
+    <file path="/_variables.scss" changelist="d537d22d-95be-4339-a676-747a687aca5e" time="1371210598012" ignored="false" />
+    <file path="/Dummy.txt" changelist="d537d22d-95be-4339-a676-747a687aca5e" time="1371253631430" ignored="false" />
+    <file path="/main.js" changelist="d537d22d-95be-4339-a676-747a687aca5e" time="1371489151905" ignored="false" />
+    <file path="/plugins.css" changelist="d537d22d-95be-4339-a676-747a687aca5e" time="1371298326668" ignored="false" />
+    <file path="$USER_HOME$/Desktop/twota/app/styles/main.css" changelist="d537d22d-95be-4339-a676-747a687aca5e" time="1371301695810" ignored="false" />
+    <file path="/plugins.js" changelist="d537d22d-95be-4339-a676-747a687aca5e" time="1371385111047" ignored="false" />
+    <file path="/catalog.scss" changelist="d537d22d-95be-4339-a676-747a687aca5e" time="1371429150958" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,34 +38,43 @@
       <file leaf-file-name="main.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="8" selection-start="777" selection-end="777" vertical-scroll-proportion="0.8095952">
+            <state line="507" column="17" selection-start="9073" selection-end="9073" vertical-scroll-proportion="0.63517916">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="normalize.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/styles/normalize.css">
+      <file leaf-file-name="catalog.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/styles/catalog.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="60" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+            <state line="2" column="12" selection-start="42" selection-end="42" vertical-scroll-proportion="-1.2">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fonts.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/styles/fonts.scss">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
+            <state line="40" column="40" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stylesheet.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/webfontkit-20130613-180757/stylesheet.css">
+      <file leaf-file-name="plugins.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/plugins.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="508" vertical-scroll-proportion="0.0">
+            <state line="651" column="3" selection-start="23719" selection-end="23719" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugins.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/styles/plugins.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="18" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -67,7 +83,25 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="259" column="0" selection-start="7943" selection-end="7943" vertical-scroll-proportion="-129.375">
+            <state line="44" column="30" selection-start="1429" selection-end="1443" vertical-scroll-proportion="-15.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reflection.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/reflection-jquery/js/reflection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="3" selection-start="0" selection-end="1836" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.tmp/styles/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7973" column="0" selection-start="220643" selection-end="220643" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -85,6 +119,12 @@
       <list>
         <option value="$PROJECT_DIR$/app/styles/normalize.css" />
         <option value="$PROJECT_DIR$/app/styles/fonts.scss" />
+        <option value="$PROJECT_DIR$/app/components/sass-bootstrap/lib/_variables.scss" />
+        <option value="$PROJECT_DIR$/app/components/sass-bootstrap/lib/_type.scss" />
+        <option value="$PROJECT_DIR$/app/styles/plugins.css" />
+        <option value="$PROJECT_DIR$/app/scripts/plugins.js" />
+        <option value="$PROJECT_DIR$/app/styles/catalog.scss" />
+        <option value="$PROJECT_DIR$/app/scripts/main.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/styles/main.scss" />
       </list>
@@ -168,7 +208,57 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twota" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twota" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twota" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twota" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twota" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twota" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".tmp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -179,6 +269,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/twota" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -249,9 +340,12 @@
       <option name="testName" />
       <method />
     </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -271,23 +365,23 @@
     <frame x="10" y="22" width="1420" height="813" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496361" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26273653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -351,51 +445,101 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/fontscore.com_b_blackoak-std/fonts.css">
+    <entry file="file://$USER_HOME$/Downloads/ElasticSlideshow/js/jquery.eislideshow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="393" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="9914" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/ElasticSlideshow/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="0" selection-end="3164" vertical-scroll-proportion="0.11278196" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/ElasticSlideshow/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="8" selection-start="5415" selection-end="5525" vertical-scroll-proportion="-12.708333" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/jquery/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="21" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Web Serveroff/fonts.css">
+    <entry file="file://$PROJECT_DIR$/.tmp/styles/fonts.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="319" vertical-scroll-proportion="0.0">
+        <state line="18" column="23" selection-start="738" selection-end="738" vertical-scroll-proportion="0.42925277">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/webfontkit-20130613-180757/stylesheet.css">
+    <entry file="file://$PROJECT_DIR$/app/_main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="508" vertical-scroll-proportion="0.0">
+        <state line="110" column="0" selection-start="0" selection-end="17034" vertical-scroll-proportion="0.02388535">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/sass-bootstrap/lib/_type.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="31" selection-start="2532" selection-end="2532" vertical-scroll-proportion="0.0234375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.tmp/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7973" column="0" selection-start="220643" selection-end="220643" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/plugins.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="651" column="3" selection-start="23719" selection-end="23719" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/reflection-jquery/js/reflection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="3" selection-start="0" selection-end="1836" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/plugins.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="18" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="40" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="259" column="0" selection-start="7943" selection-end="7943" vertical-scroll-proportion="-129.375">
+        <state line="44" column="30" selection-start="1429" selection-end="1443" vertical-scroll-proportion="-15.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/fonts.scss">
+    <entry file="file://$PROJECT_DIR$/app/styles/catalog.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/normalize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="60" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+        <state line="2" column="12" selection-start="42" selection-end="42" vertical-scroll-proportion="-1.2">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="8" selection-start="777" selection-end="777" vertical-scroll-proportion="0.8095952">
+        <state line="507" column="17" selection-start="9073" selection-end="9073" vertical-scroll-proportion="0.63517916">
           <folding />
         </state>
       </provider>

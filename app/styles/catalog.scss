@@ -1,0 +1,117 @@
+#catalog{
+  padding: 100px 0;
+  overflow-y: hidden;
+  background: $grey-bg;
+  h1{
+    position: relative;
+    margin-bottom: 50px;
+    .sort{
+      font-size: 16px;
+      letter-spacing: normal;
+      width: 200px;
+      position: absolute;
+      right: 0;
+      background: $grey-bg;
+      top: 18px;
+      padding-left: 10px;
+    }
+  }
+  #catalog-menu{
+    position: fixed;
+    opacity: .4;
+    @include transition(all .3s ease);
+    &:hover{
+      opacity: 1;
+    }
+  }
+  .grid4{
+    margin-left: 240px;
+  }
+  .item{
+    width: 200px;
+    float: left;
+    margin: 25px 0 60px 0;
+    margin-right: 60px;
+    cursor: pointer;
+    position: relative;
+    .pic{
+      height: 240px;
+      position: relative;
+      width: 100%;
+      img{
+        position: relative;
+        z-index: 7;
+      }
+      canvas{
+        margin-top:-6px;
+      }
+      .to-basket{
+        display: block;
+        z-index: 15;
+        position: absolute;
+        right: -34px;
+        top: 50px;
+        width: 116px;
+        height: 116px;
+        @include border-radius(58px);
+        background: white;
+        opacity: 0;
+        @include scale(.3);
+        visibility: hidden;
+        @include transition(all .3s ease);
+        span{
+          visibility: hidden;
+          position: absolute;
+          display: block;
+          top: -30px;
+          left: 0;
+          font-size: 22px;
+          @include transition(all .3s ease);
+          opacity: 0;
+        }
+      }
+    }
+    .heading{
+      position: absolute;
+      visibility: hidden;
+      z-index: 10;
+      margin-top: 5px;
+      margin-left: 10px;
+      opacity: 0;
+      @include transition(all .3s ease);
+      h4{
+        font-size: 34px;
+        border-bottom: 1px solid #858585;
+        line-height: 27px;
+      }
+      .price{
+        margin-top: 9px;
+      }
+    }
+    &:nth-child(3n){
+      margin-right: 0;
+    }
+    &:hover{
+      .heading{
+        visibility: visible;
+        margin-top: 20px;
+        opacity: 1;
+      }
+      .pic{
+        .to-basket{
+          visibility: visible;
+          @include scale(1);
+          opacity: .7;
+          &:hover{
+            opacity: 1;
+            span{
+              visibility: visible;
+              opacity: 1;
+              left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

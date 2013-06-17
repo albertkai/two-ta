@@ -3,363 +3,462 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>T W O - T A | Г л а в н а я</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>T W O - T A | Г л а в н а я</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+<body>
 
-        <!--Modals-->
+<!--Modals-->
 
-            <div id="basket-preview">
 
-                <h4>
+
+
+<!--modals end-->
+
+<header class="header-fixed">
+    <div class="c-container">
+        <i id="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </i>
+        <i id="logo"></i>
+        <nav>
+            <ul>
+                <li class="_dropdown-within">
+                    <a href="">каталог</a>
+                    <ul>
+                        <li>ЖЕНСКИЕ СУМКИ</li>
+                        <li>МУЖСКИЕ СУМКИ</li>
+                        <li>АКСЕССУАРЫ</li>
+                        <li>ОБУВЬ</li>
+                    </ul>
+                    <i class="dropdown-arrow closed"></i>
+                </li>
+                <li>
+                    <a href="">инфо</a>
+                </li>
+                <li>
+                    <a href="">о нас</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="login-block">
+            <a href="">two-ta club<i></i></a>
+        </div>
+
+        <div id="basket-thumb">
+            <div id="basket-round"></div>
+            <p id="quantity">0</p>
+        </div>
+        <div id="basket-preview">
+
+            <div class="bg"></div>
+
+            <div class="body">
+                <i class="cross"></i>
+                <h4 class="spacing">
                     КОРЗИНА
-                    <i class="close"></i>
                 </h4>
 
                 <table>
                     <tr>
                         <td>
-                            <img src="" alt=""/>
+                            <img src="img/temp/basket_prev_1.png" alt=""/>
                         </td>
                         <td>
                             <h4>Alfred</h4>
+
                             <p class="price small">4500р</p>
+
                             <p>кол-во: <span>1</span></p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="" alt=""/>
+                            <img src="img/temp/basket_prev_2.png" alt=""/>
                         </td>
                         <td>
                             <h4>Alfred</h4>
+
                             <p class="price small">4500р</p>
+
                             <p>кол-во: <span>1</span></p>
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img src="" alt=""/>
-                        </td>
-                        <td>
-                            <h4>Alfred</h4>
-                            <p class="price small">4500р</p>
-                            <p>кол-во: <span>1</span></p>
-                        </td>
-                    </tr>
-                    <hr>
+
                 </table>
 
-                <div class="price">
+                <hr>
+
+                <div class="total">
+
+                    <p class="price medium">5600р</p>
+
+                    <div class="total-heading">ИТОГО:</div>
 
                 </div>
 
-            </div>
+                <hr>
 
+                <div class="interaction">
 
-        <!--modals end-->
+                    <a class="black" href="">открыть корзину</a>
 
-        <header>
-            <div id="logo"></div>
-            <nav>
-                <a href="">КАТАЛОГ</a>
-                <a href="">ИНФО</a>
-                <a href="">О НАС</a>
-            </nav>
-            <a href="">two-ta club <i></i></a>
-            <div id="basket-thumb">
-                <div id="basket-round"></div>
-                <p id="quantity"></p>
-            </div>
-        </header>
+                    <input type="submit" value="оформить"/>
 
-        <section id="slider">
+                </div>
 
-            <img src="img/slide1" alt=""/>
-
-            <i class="arrow-left"></i>
-            <i class="arrow-right"></i>
-
-        </section>
-
-
-        <section id="teaser">
-
-            <div class="item">
-
-                <i class="design"></i>
-                <h4>ДИЗАЙН</h4>
-                <p>Мы сотрудничаем только с лучшими дизайнерами</p>
 
             </div>
 
-            <div class="item">
+        </div>
+    </div>
+</header>
 
-                <i class="design"></i>
-                <h4>ДИЗАЙН</h4>
-                <p>Мы сотрудничаем только с лучшими дизайнерами</p>
+<div id="catalog" class="wrap">
 
-            </div>
+    <div class="c-container">
 
-            <div class="item">
+        <ul id="source">
+            <li data-id="iphone">iOS</li>
+            <li data-id="android">Android</li>
+            <li data-id="winmo">Windows Phone 7</li>
+        </ul>
 
-                <i class="design"></i>
-                <h4>ДИЗАЙН</h4>
-                <p>Мы сотрудничаем только с лучшими дизайнерами</p>
+        <aside class="grid3" id="catalog-menu">
+            <ul>
+                <li>
+                    <a href="">ЖЕНСКИЕ СУМКИ</a>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">МУЖСКИЕ СУМКИ</a>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>ОБУВЬ</li>
+                <li>АКСЕССУАРЫ</li>
+            </ul>
+        </aside>
 
-            </div>
+        <section class="main-catalog grid4">
+
+            <h1>
+                МУЖСКИЕ СУМКИ
+                <div class="sort">сортировать по:
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+            </h1>
+
+            <div class="items destination">
+
+                <div data-id="iphone" class="item">
+
+                    <div class="pic">
+                            <img class="main-pic reflect" src="img/temp/catalog1.png" alt=""/>
+                        <a class="to-basket" href=""><span>в корзину</span></a>
+                    </div>
+
+                    <div class="heading">
+                        <h4>Alfred</h4>
+
+                        <div class="line"></div>
+                        <p class="price medium">4600р</p>
+                    </div>
+
+                </div>
 
 
-        </section>
+                <div data-id="macosx" class="item">
+
+                    <div class="pic">
+                            <img class="main-pic reflect" src="img/temp/catalog2.png" alt=""/>
+                        <a class="to-basket" href=""><span>в корзину</span></a>
+                    </div>
+
+                    <div class="heading">
+                        <h4>Alfred</h4>
+
+                        <div class="line"></div>
+                        <p class="price medium">4600р</p>
+                    </div>
+
+                </div>
 
 
-        <section id="categories">
+                <div data-id="macosx" class="item">
 
-            <div class="item">
-                <p class="heading">МУЖСКИЕ СУМКИ</p>
-                <img src="" alt=""/>
-            </div>
+                    <div class="pic">
+                        <img class="main-pic reflect" src="img/temp/catalog3.png" alt=""/>
+                        <a class="to-basket" href=""><span>в корзину</span></a>
+                    </div>
 
-            <div class="item">
-                <p class="heading">МУЖСКИЕ СУМКИ</p>
-                <img src="" alt=""/>
-            </div>
+                    <div class="heading">
+                        <h4>Alfred</h4>
 
-            <div class="item">
-                <p class="heading">МУЖСКИЕ СУМКИ</p>
-                <img src="" alt=""/>
-            </div>
+                        <div class="line"></div>
+                        <p class="price medium">4600р</p>
+                    </div>
 
-            <div class="item">
-                <p class="heading">МУЖСКИЕ СУМКИ</p>
-                <img src="" alt=""/>
-            </div>
-
-        </section>
+                </div>
 
 
-        <section id="about">
+                <div data-id="iphone" class="item">
 
-            <div class="grid1">
+                    <div class="pic">
+                            <img class="main-pic reflect" src="img/temp/catalog1.png" alt=""/>
+                        <a class="to-basket" href=""><span>в корзину</span></a>
+                    </div>
 
-                <h3>ПРОИЗВОДСТВО</h3>
+                    <div class="heading">
+                        <h4>Alfred</h4>
 
-                <table>
-                    <tr>
-                        <td><img src="" alt=""/></td>
-                        <td>
-                            <h4>ДИЗАЙН</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum distinctio eligendi excepturi neque perferendis quaerat saepe sapiente similique vitae!</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="" alt=""/></td>
-                        <td>
-                            <h4>ИЗМЕРЕНИЕ</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum distinctio eligendi excepturi neque perferendis quaerat saepe sapiente similique vitae!</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="" alt=""/></td>
-                        <td>
-                            <h4>ДЕКОРИРОВАНИЕ</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum distinctio eligendi excepturi neque perferendis quaerat saepe sapiente similique vitae!</p>
-                        </td>
-                    </tr>
-                </table>
+                        <div class="line"></div>
+                        <p class="price medium">4600р</p>
+                    </div>
 
-            </div>
+                </div>
 
-            <div class="grid2">
 
-                <h3>БЛОГ</h3>
+                <div data-id="iphone" class="item">
+
+                    <div class="pic">
+                        <img class="main-pic reflect" src="img/temp/catalog3.png" alt=""/>
+                        <a class="to-basket" href=""><span>в корзину</span></a>
+                    </div>
+
+                    <div class="heading">
+                        <h4>Alfred</h4>
+
+                        <div class="line"></div>
+                        <p class="price medium">4600р</p>
+                    </div>
+
+                </div>
+
 
                 <div class="item">
-                    <h6>21.03.2012</h6>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolores fugit iure modi nam necessitatibus rem saepe tenetur, ut voluptates?
-                    </p>
-                    <p class="further">
-                        далее
-                    </p>
+
+                    <div class="pic">
+                        <img class="main-pic reflect" src="img/temp/catalog2.png" alt=""/>
+                        <a class="to-basket" href=""><span>в корзину</span></a>
+                    </div>
+
+                    <div class="heading">
+                        <h4>Alfred</h4>
+
+                        <div class="line"></div>
+                        <p class="price medium">4600р</p>
+                    </div>
+
                 </div>
 
-                <div class="item">
-                    <h6>21.03.2012</h6>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolores fugit iure modi nam necessitatibus rem saepe tenetur, ut voluptates?
-                    </p>
-                    <p class="further">
-                        далее
-                    </p>
-                </div>
 
                 <div class="item">
-                    <h6>21.03.2012</h6>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolores fugit iure modi nam necessitatibus rem saepe tenetur, ut voluptates?
-                    </p>
-                    <p class="further">
-                        далее
-                    </p>
+
+                    <div class="pic">
+                        <img class="main-pic reflect" src="img/temp/catalog1.png" alt=""/>
+                        <a class="to-basket" href=""><span>в корзину</span></a>
+                    </div>
+
+                    <div class="heading">
+                        <h4>Alfred</h4>
+
+                        <div class="line"></div>
+                        <p class="price medium">4600р</p>
+                    </div>
+
+                </div>
+
+
+                <div class="item">
+
+                    <div class="pic">
+                        <img class="main-pic reflect" src="img/temp/catalog3.png" alt=""/>
+                        <a class="to-basket" href=""><span>в корзину</span></a>
+                    </div>
+
+                    <div class="heading">
+                        <h4>Alfred</h4>
+
+                        <div class="line"></div>
+                        <p class="price medium">4600р</p>
+                    </div>
+
                 </div>
 
             </div>
 
         </section>
 
+    </div>
 
-        <div class="c-sep-line"></div>
+</div>
 
 
-        <footer>
+<div class="c-sep-line"></div>
 
-            <div class="container">
 
-                <div>
+<footer>
 
+    <div class="c-container">
+
+        <div class="grid3">
+
+            <h2 class="white">
+                Магазин
+            </h2>
+
+            <a class="white" href="">МУЖСКИЕ СУМКИ</a><br>
+            <a class="white" href="">ЖЕНСКИЕ СУМКИ</a><br>
+            <a class="white" href="">АКСЕССУАРЫ</a><br>
+            <a class="white" href="">ЖЕНСКАЯ ОБУВЬ</a>
+
+        </div>
+
+        <div class="grid3">
+
+            <h2 class="white">
+                Инфо
+            </h2>
+
+            <a class="white" href="">ОПЛАТА</a><br>
+            <a class="white" href="">ДОСТАВКА</a><br>
+            <a class="white" href="">БАНКОВСКИЕ КАРТЫ</a>
+
+        </div>
+
+        <div class="grid3">
+
+            <h2 class="white">
+                О компании
+            </h2>
+
+            <a class="white" href="">МУЖСКИЕ СУМКИ</a><br>
+            <a class="white" href="">ЖЕНСКИЕ СУМКИ</a><br>
+            <a class="white" href="">АКСЕССУАРЫ</a><br>
+            <a class="white" href="">ЖЕНСКАЯ ОБУВЬ</a>
+
+        </div>
+
+        <div>
+
+            <h2 class="white">
+                На связи
+            </h2>
+
+
+
+        </div>
+
+        <!--<table>
+            <thead>
+            <tr>
+                <td>
+
+                </td>
+                <td>
                     <h2 class="white">
-                        Магазин
+                        Инфо
                     </h2>
-
+                </td>
+                <td>
+                    <h2 class="white">
+                        О компании
+                    </h2>
+                </td>
+                <td>
+                    <h2 class="white">
+                        На связи
+                    </h2>
+                </td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
                     <a class="white" href="">МУЖСКИЕ СУМКИ</a><br>
                     <a class="white" href="">ЖЕНСКИЕ СУМКИ</a><br>
                     <a class="white" href="">АКСЕССУАРЫ</a><br>
                     <a class="white" href="">ЖЕНСКАЯ ОБУВЬ</a>
+                </td>
+                <td>
+                    <a class="white" href="">ОПЛАТА</a><br>
+                    <a class="white" href="">ДОСТАВКА</a><br>
+                    <a class="white" href="">БАНКОВСКИЕ КАРТЫ</a>
+                </td>
+                <td>
+                    <a class="white" href="">TWO-TA</a><br>
+                    <a class="white" href="">КОНТАКТЫ</a><br>
+                    <a class="white" href="">УСЛОВИЯ ПОКУПКИ</a>
+                </td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>-->
 
-                </div>
+        <p id="bottom" class="white"><span>2013 Two-ta</span> leather works. Использование материалов сайта без ссылки как
+            минимум некрасиво=) </p>
 
-                <div>
+    </div>
 
-                    <h2 class="white">
-                        Магазин
-                    </h2>
+</footer>
 
-                    <a class="white" href="">МУЖСКИЕ СУМКИ</a><br>
-                    <a class="white" href="">ЖЕНСКИЕ СУМКИ</a><br>
-                    <a class="white" href="">АКСЕССУАРЫ</a><br>
-                    <a class="white" href="">ЖЕНСКАЯ ОБУВЬ</a>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
 
-                </div>
+<!-- build:js scripts/main.js -->
+<script src="components/jquery/jquery.js"></script>
+<script src="components/underscore/underscore-min.js"></script>
+<script src="components/backbone/backbone-min.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/plugins.js"></script>
+<!-- endbuild -->
 
-                <div>
+<!-- build:js(.tmp) scripts/coffee.js -->
+<script src="scripts/hello.js"></script>
+<!-- endbuild -->
 
-                    <h2 class="white">
-                        Магазин
-                    </h2>
-
-                    <a class="white" href="">МУЖСКИЕ СУМКИ</a><br>
-                    <a class="white" href="">ЖЕНСКИЕ СУМКИ</a><br>
-                    <a class="white" href="">АКСЕССУАРЫ</a><br>
-                    <a class="white" href="">ЖЕНСКАЯ ОБУВЬ</a>
-
-                </div>
-
-                <div>
-
-                    <h2 class="white">
-                        Магазин
-                    </h2>
-
-                    <a class="white" href="">МУЖСКИЕ СУМКИ</a><br>
-                    <a class="white" href="">ЖЕНСКИЕ СУМКИ</a><br>
-                    <a class="white" href="">АКСЕССУАРЫ</a><br>
-                    <a class="white" href="">ЖЕНСКАЯ ОБУВЬ</a>
-
-                </div>
-
-                <!--<table>
-                    <thead>
-                    <tr>
-                        <td>
-
-                        </td>
-                        <td>
-                            <h2 class="white">
-                                Инфо
-                            </h2>
-                        </td>
-                        <td>
-                            <h2 class="white">
-                                О компании
-                            </h2>
-                        </td>
-                        <td>
-                            <h2 class="white">
-                                На связи
-                            </h2>
-                        </td>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <a class="white" href="">МУЖСКИЕ СУМКИ</a><br>
-                            <a class="white" href="">ЖЕНСКИЕ СУМКИ</a><br>
-                            <a class="white" href="">АКСЕССУАРЫ</a><br>
-                            <a class="white" href="">ЖЕНСКАЯ ОБУВЬ</a>
-                        </td>
-                        <td>
-                            <a class="white" href="">ОПЛАТА</a><br>
-                            <a class="white" href="">ДОСТАВКА</a><br>
-                            <a class="white" href="">БАНКОВСКИЕ КАРТЫ</a>
-                        </td>
-                        <td>
-                            <a class="white" href="">TWO-TA</a><br>
-                            <a class="white" href="">КОНТАКТЫ</a><br>
-                            <a class="white" href="">УСЛОВИЯ ПОКУПКИ</a>
-                        </td>
-                        <td></td>
-                    </tr>
-                    </tbody>
-                </table>-->
-
-                <p class="white"><span>2013 Two-ta</span> leather works. Использование материалов сайта без ссылки как
-                    минимум некрасиво=) </p>
-
-            </div>
-
-        </footer>
-
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- build:js scripts/main.js -->
-        <script src="components/jquery/jquery.js"></script>
-        <script src="components/underscore/underscore-min.js"></script>
-        <script src="components/backbone/backbone-min.js"></script>
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js(.tmp) scripts/coffee.js -->
-        <script src="scripts/hello.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js scripts/plugins.js -->
-        <script src="components/sass-bootstrap/js/bootstrap-affix.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-alert.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-dropdown.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-tooltip.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-modal.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-transition.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-button.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-popover.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-typeahead.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-carousel.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-scrollspy.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-collapse.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-tab.js"></script>
-        <!-- endbuild -->
+<!-- build:js scripts/plugins.js -->
+<script src="components/sass-bootstrap/js/bootstrap-affix.js"></script>
+<script src="components/sass-bootstrap/js/bootstrap-alert.js"></script>
+<script src="components/sass-bootstrap/js/bootstrap-dropdown.js"></script>
+<script src="components/sass-bootstrap/js/bootstrap-tooltip.js"></script>
+<script src="components/sass-bootstrap/js/bootstrap-modal.js"></script>
+<script src="components/sass-bootstrap/js/bootstrap-transition.js"></script>
+<script src="components/sass-bootstrap/js/bootstrap-button.js"></script>
+<script src="components/sass-bootstrap/js/bootstrap-popover.js"></script>
+<script src="components/sass-bootstrap/js/bootstrap-typeahead.js"></script>
+<script src="components/sass-bootstrap/js/bootstrap-carousel.js"></script>
+<script src="components/sass-bootstrap/js/bootstrap-scrollspy.js"></script>
+<script src="components/sass-bootstrap/js/bootstrap-collapse.js"></script>
+<script src="components/sass-bootstrap/js/bootstrap-tab.js"></script>
+<!-- endbuild -->
 </body>
 </html>
