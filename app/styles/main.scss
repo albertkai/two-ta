@@ -1,5 +1,5 @@
 @import 'sass-bootstrap/lib/bootstrap';
-@import 'fonts';
+@import '_fonts';
 @import 'normalize.css';
 //@import 'icons/*.png';
 //@include all-icons-sprites;
@@ -13,19 +13,26 @@ $light-grey: #808080;
 $ultra-light-grey: #a5a5a5;
 $grey-bg: #ededed;
 
+$iphone: 450px;
+
 //Base
 
 body{
+  position: relative;
   width: 100%;
   height: 100%;
   background: white;
+  //-webkit-overflow-scrolling: touch;
+  @include transition(all .3s ease);
 }
 h1 {
   font-size: 29px;
   font-family: serveroff;
   line-height: 36px;
   border-bottom: 1px solid #d9d9d9;
-  letter-spacing: .5em;
+  @media screen and (max-width: 700px) {
+    padding-left: 10px;
+  }
 }
 h2 {
   font-size: 46px;
@@ -74,8 +81,9 @@ h6{
 
 a{
   font-family: serveroff;
+  font-size: 21px;
   color: $grey;
-  &:hover{
+  &:hover, &._active{
     color: $dark-grey;
     text-decoration: none;
   }
@@ -98,6 +106,7 @@ p{
   color: $grey;
   font-size: 18px;
   line-height: 24px;
+  margin: 0;
   &.dark{
     color: black;
   }
@@ -116,32 +125,104 @@ p{
     &.medium{
       font-size: 22px;
     }
+    &.huge{
+      font-size: 25px;
+    }
+  }
+}
+button{
+  background: black;
+  text-align: center;
+  padding: 9px 24px;
+  color: white;
+  border: 0;
+  font-family: serveroff;
+  font-size: 22px;
+  &:hover{
+    background: $red;
+  }
+  &.huge{
+    font-size: 28px;
+    padding: 14px 40px;
+  }
+  @media screen and (max-width: 700px){
+    width: 100%;
   }
 }
 
+//Helpers
+
+#h-basket-overlay{
+  position: fixed;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  z-index: 19;
+}
+.h-mobile-only{
+  display: none;
+  @media screen and (max-width: $iphone){
+    display: block;
+  }
+}
+.h-stick-right{
+  float: right;
+}
 //Grid
 
 .grid1{
   width: 640px;
   float: left;
+  @media screen and (max-width: $iphone){
+    width: 100%;
+  }
 }
 .grid2{
   width: 320px;
   float: left;
+  @media screen and (max-width: $iphone){
+    width: 100%;
+  }
 }
 .grid3{
   width: 240px;
+  @media screen and (max-width: $iphone){
+    width: 100%;
+  }
 }
 .grid4{
   width: 720px;
+  @media screen and (max-width: $iphone){
+    width: 100%;
+  }
+}
+.grid5{
+  width: 480px;
+  @media screen and (max-width: $iphone){
+    width: 100%;
+  }
 }
 
+//Modal
+
+.r-modal{
+  display: none;
+}
 
 //Forms
-
 input{
-  height: 35px;
-  line-height: 35px;
+  @include box-sizing(border-box);
+}
+input[type="text"], input[type="number"], input[type="password"], input[type="tel"], input[type="email"], textarea{
+  border: 0;
+  height: 40px;
+  line-height: 30px;
+  width: 40%;
+  @include box-shadow(#ccc 0 0 3px inset);
+  @media screen and (max-width: 700px){
+    border: 1px solid #ccc;
+    width: 100%;
+  }
 }
 input[type="submit"]{
   background: black;
@@ -149,11 +230,31 @@ input[type="submit"]{
   color: white;
   font-family: serveroff;
   font-size: 22px;
-  padding: 0 26px;
+  padding: 10px 26px;
   &:hover{
     background: $red;
   }
+  @media screen and (max-width: $iphone){
+    width: 100%;
+  }
 }
+
+//Tabs
+
+.r-tabs{
+  .r-tab{
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    @include transition(all .3s ease);
+    &._active{
+      visibility: visible;
+      opacity: 1;
+      height: auto;
+    }
+  }
+}
+
 
 //Common
 
@@ -178,6 +279,7 @@ input[type="submit"]{
     }
   }
 }
+
 //Visual
 
 .spacing{
@@ -191,10 +293,23 @@ input[type="submit"]{
 i{
   display: block;
   font-style: normal;
+  background-repeat: no-repeat;
   &.cross{
     width: 22px;
     height: 22px;
-    background: url(../img/icons/cross22x22.png);
+    background-image: url(../images/icons/cross22x22.png);
+    opacity: .2;
+    cursor: pointer;
+    @include transition(all .3s ease);
+    &:hover{
+      opacity: .5;
+      //@include rotate(180deg);
+    }
+  }
+  &.cross-huge{
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/icons/cross60x60.png);
     opacity: .2;
     cursor: pointer;
     @include transition(all .3s ease);
@@ -207,46 +322,159 @@ i{
     display: inline-block;
     width: 98px;
     height: 77px;
-    background: url(../img/icons/logo.png);
+    background-image: url(../images/icons/logo.png);
   }
   &.design{
     display: inline-block;
     width: 77px;
     height: 77px;
-    background: url(../img/icons/design.png);
+    background-image: url(../images/icons/design.png);
     opacity: .6;
   }
   &.quality{
     display: inline-block;
     width: 77px;
     height: 77px;
-    background: url(../img/icons/quality.png);
+    background-image: url(../images/icons/quality.png);
     opacity: .6;
   }
   &.service{
     display: inline-block;
     width: 77px;
     height: 77px;
-    background: url(../img/icons/service.png);
+    background-image: url(../images/icons/service.png);
     opacity: .6;
   }
   &.more{
     width: 42px;
     height: 42px;
-    background: url(../img/icons/more.png);
+    background-image: url(../images/icons/more.png);
     background-size: cover;
     margin: 0 auto 5px auto;
     @include transition(all .3s ease);
+  }
+  &.item-info{
+    width: 46px;
+    height: 46px;
+    background-image: url(../images/icons/item_info.png);
+  }
+  &.item-delivery{
+    width: 46px;
+    height: 46px;
+    background-image: url(../images/icons/item_delivery.png);
+  }
+  &.item-guarantee{
+    width: 46px;
+    height: 46px;
+    background-image: url(../images/icons/item_guarantee.png);
+  }
+  &.arrow-small{
+    width: 14px;
+    height: 27px;
+    &.left{
+      background-image: url(../images/icons/arrow_left_small.png);
+    }
+    &.right{
+      background-image: url(../images/icons/arrow_right_small.png);
+    }
+  }
+  &.arrow-vertical-small{
+    width: 13px;
+    height: 7px;
+    &.up{
+      background-image: url(../images/icons/arrow_top_small.png);
+    }
+    &.down{
+      background-image: url(../images/icons/arrow_bottom_small.png);
+    }
+  }
+  &.order-succeed{
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/icons/order-succeed.png);
+  }
+  &.order-aborted{
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/icons/order-aborted.png);
+  }
+  &.order-progress{
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/icons/order-progress.png);
+  }
+  &.quant{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    left: 4px;
+    cursor: pointer;
+    color: #c7c7c7;
+    @include transition(all .3s ease);
+    &:hover{
+      color: $ultra-light-grey;
+    }
+    &.plus{
+      top: -26px;
+    }
+    &.minus{
+
+    }
+  }
+  &.social{
+    width: 64px;
+    height: 64px;
+    &.facebook{
+      background-image: url(../images/icons/facebook.png);
+    }
+    &.facebook_grey{
+      background-image: url(../images/icons/facebook_grey.png);
+    }
+    &.vkontakte{
+      background-image: url(../images/icons/vkontakte.png);
+    }
+    &.vkontakte_grey{
+      background-image: url(../images/icons/vkontakte_grey.png);
+    }
+    &.twitter{
+      background-image: url(../images/icons/twitter.png);
+    }
+    &.twitter_grey{
+      background-image: url(../images/icons/twitter_grey.png);
+    }
+    &.instagram{
+      background-image: url(../images/icons/instagram.png);
+    }
+    &.instagram_grey{
+      background-image: url(../images/icons/instagram_grey.png);
+    }
+  }
+  &.phone-small{
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icons/phone_20x20.png);
+  }
+  &.email-small{
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icons/email_20x20.png);
+  }
+  &.address-small{
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icons/address_20x20.png);
   }
 }
 
 //Header
 
 header{
+  position: relative;
   height: 100px;
   width: 100%;
   background: white;
-  z-index: 20;
+  z-index: 50;
   @include box-shadow(#ccc 0 0 7px);
   @include transition(all .3s ease);
   &.header-fixed{
@@ -301,36 +529,44 @@ header{
       margin: 0;
       padding: 0;
       list-style: none;
+      opacity: .85;
       li{
         padding: 0;
         display: inline-block;
+        &#login-mobile{
+          display: none;
+        }
         ul{
           display: block;
           position: absolute;
-          background: black;
+          background: white;
           padding: 10px 0;
           visibility: hidden;
+          @include box-shadow(#ccc 0 0 5px);
           opacity: 0;
+          width: 150px;
+          top: 90px;
           @include transition(all .3s ease);
+          font-family: serveroff;
           li{
             display: block;
             padding: 10px;
             color: $light-grey;
             cursor: pointer;
             @include transition(all .3s ease);
+            @include box-sizing(border-box);
             &:hover{
-              margin-left: 15px;
-              color: white;
+              padding-left: 15px;
+              color: black;
             }
           }
         }
         &:hover{
-          background: black;
+          @include box-sizing(border-box);
           a{
-            color: white;
+            color: black;
           }
           ul{
-            width: 170px;
             opacity: 1;
             visibility: visible;
           }
@@ -386,10 +622,7 @@ header{
       top: 28px;
       @include border-radius(22px);
       @include box-shadow($red 0 0 2px);
-      background-color: $red;
-      background-image: url(../img/icons/basket_small.png);
-      background-repeat: no-repeat;
-      background-position: 11px 10px;
+      background: $red url(../images/icons/basket_small.png) 7px 4px no-repeat;
       @include transition(all .3s ease);
     }
     #quantity{
@@ -425,11 +658,11 @@ header{
       height: 100%;
       background: white;
       opacity: .85;
-      z-index: 1;
+      z-index: 2;
     }
     .body{
       position: relative;
-      z-index: 2;
+      z-index: 3;
       padding: 15px 30px;
       .cross{
         position: absolute;
@@ -477,13 +710,16 @@ header{
   }
 
   //Media queries
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: $iphone) {
+    height: 70px;
     &.header-fixed{
       opacity: 1;
     }
     #logo{
       left: 50%;
       margin-left: -49px;
+      top: 0;
+      @include scale(.7);
     }
     #login-block{
       display: none;
@@ -491,11 +727,12 @@ header{
     #menu-toggle{
       display: block;
       position: absolute;
-      top: 22px;
+      top: 6px;
       left: 20px;
       width: 40px;
       height: 80px;
       cursor: pointer;
+      @include scale(.7);
       div{
         width: 100%;
         height: 7px;
@@ -505,11 +742,17 @@ header{
     }
     #basket-preview{
       width: 100%;
-      top: 100px;
+      top: 70px;
+      @include box-shadow(#ccc 0 0 0);
+      border-top: 1px solid #e4e4e4;
+    }
+    #basket-thumb{
+      @include scale(.8);
+      top: -15px;
     }
     nav{
       position: absolute;
-      top: 100px;
+      top: 70px;
       display: block;
       width: 100%;
       left: 0px;
@@ -520,6 +763,13 @@ header{
       ul{
         background: black;
         li{
+          &#login-mobile{
+            display: block;
+            a{
+              color: $red !important;
+              font-weight: bold;
+            }
+          }
           display: block;
           width: 100%;
           height: auto;
@@ -558,6 +808,7 @@ header{
             display: none;
             height: 0;
             opacity: 1;
+            top: 0;
             width: 100%;
             height: auto;
             color: white !important;
@@ -569,13 +820,14 @@ header{
               position: static;
               height: auto;
               padding: 0;
-              color: white !important;
-              background: $red;
-              border-bottom: 1px solid black;
+              color: #d1d1d1 !important;
+              border-left: 3px solid red;
+              background: $dark-grey;
+              font-size: 18px;
               @include box-sizing(border-box);
-              padding-left: 60px;
+              padding-left: 40px;
               &:last-of-type{
-                border: 0;
+                border-bottom: 0;
               }
               &:hover{
                 margin-left: 0;
@@ -588,6 +840,42 @@ header{
   }
 }
 
+//Modal
+
+.r-modal{
+  position: relative;
+  width: 600px;
+  background: white;
+  @include box-sizing(border-box);
+  padding: 40px;
+  top: 100px;
+  left: 50%;
+  margin-left: -300px;
+  @include box-shadow(0 0 7px #ccc);
+  z-index: 101;
+}
+
+.modal-backdrop{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0;
+  z-index: 101;
+  visibility: hidden;
+  @include transition(all .3s ease);
+  //@include scale(0);
+  .cross-huge{
+    right: 24px;
+    top: 24px;
+    position: absolute;
+  }
+  &._opened{
+    @include scale(1);
+    opacity: .9;
+    visibility: visible;
+  }
+}
 
 //Slider
 
@@ -674,6 +962,14 @@ header{
       }
     }
   }
+  @media screen and (max-width: $iphone) {
+    display: none;
+    .item{
+      p{
+        display: none;
+      }
+    }
+  }
 }
 
 //Categories
@@ -722,6 +1018,24 @@ header{
       }
     }
   }
+  @media screen and (max-width: 700px) {
+    padding-top: 20px;
+    overflow-y: hidden;
+    height: auto;
+    padding-bottom: 20px;
+    .item{
+      margin: 0 auto;
+      width: 290px;
+      height: 190px;
+      float: none;
+      &:last-of-type{
+        margin: 0 auto;
+      }
+      .heading{
+        top: 0px;
+      }
+    }
+  }
 }
 
 
@@ -737,30 +1051,28 @@ header{
     margin-bottom: 30px;
   }
   .production{
-    table{
-      tr{
-        td{
-          padding-bottom: 30px;
-          &:nth-child(1){
-            width: 200px;
-            img{
-              width: 170px;
-              height: 170px;
-              @include border-radius(85px);
-              @include box-shadow(black 3px 5px 10px inset);
-            }
-          }
-          &:nth-child(2){
-            width: 340px;
-            padding-right: 20px;
-            h5{
-              padding: 14px 0;
-            }
-            p{
-              font-size: 19px;
-            }
-          }
+    ul {
+      list-style-type: none;
+      li {
+        clear: both;
+        padding: 40px 60px 40px 0;
+
+        img {
+          width: 170px;
+          height: 170px;
+          @include border-radius(85px);
+          @include box-shadow(black 3px 5px 10px inset);
+          float: left;
+          margin-right: 30px;
         }
+
+          h5 {
+            padding: 14px 0;
+          }
+          p {
+            font-size: 19px;
+          }
+
       }
     }
   }
@@ -796,31 +1108,222 @@ header{
       }
     }
   }
+  @media screen and (max-width: $iphone) {
+    width: 100%;
+    h3{
+      left: 20px;
+    }
+    ul {
+
+      li {
+        border-bottom: 1px solid $grey-bg;
+        padding: 60px 20px !important;
+
+        img {
+          display: block;
+          float: none !important;
+          margin: 0 auto !important;
+        }
+
+        h5, p{
+          text-align: center;
+        }
+        h5{
+          font-size: 24px;
+          margin-top: 20px;
+        }
+      }
+    }
+    .blog{
+      width: 100%;
+      padding: 20px;
+      @include box-sizing(border-box);
+      .item{
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        h6{
+          left: 0px;
+          font-family: PT Sans, sans-serif;
+          font-weight: 900;
+          font-size: 30px;
+          color: white;
+          top: -18px;
+          background: #e9e9e9;
+          padding: 8px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
 }
 
 
 //Footer
 
 footer{
+  position: relative;
   background: $dark-grey;
   border-top: 7px solid $grey-bg;
   clear: both;
-  min-height: 300px;
+  height: 400px;
+  overflow: hidden;
   padding-top: 40px;
   .c-container{
     height: 100%;
   }
   .grid3{
+    position: relative;
     width: 240px;
     float: left;
+    h3{
+      color: white;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    a{
+      font-size: 16px;
+    }
   }
   #bottom{
     position: absolute;
     left: 0;
     bottom: 0;
   }
+  table.contacts{
+    width: 100%;
+    tr{
+      td{
+        padding-bottom: 10px;
+        p{
+          color: $ultra-light-grey;
+          text-transform: uppercase;
+        }
+        a{
+          color: $ultra-light-grey;
+          text-transform: uppercase;
+          &:hover{
+            color: white;
+            text-decoration: underline;
+
+          }
+        }
+        &:nth-child(1){
+          vertical-align: top;
+          width: 15%;
+          i{
+            opacity: .2;
+          }
+        }
+        &:nth-child(2){
+          width: 85%;
+        }
+      }
+    }
+  }
+  .socials{
+    ul{
+      position: relative;
+      top: 50px;
+      width: 100%;
+      list-style: none;
+      clear: both;
+      li{
+        width: 240px;
+        float: left;
+      }
+    }
+    a{
+      display: block;
+      width: 64px;
+      height: 64px;
+      position: relative;
+      margin: 0 auto;
+      i{
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include transition(opacity .3s ease);
+        &._under{
+          z-index: 1;
+        }
+        &._over{
+          z-index: 2;
+          opacity: 0;
+        }
+      }
+      &:hover{
+        ._over{
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  //Media queries
+  @media screen and (max-width: 700px) {
+    height: 500px;
+    min-height: 300px;
+    h2{
+      margin-top: 30px;
+    }
+    .grid3{
+      width: 100%;
+    }
+    #bottom{
+      position: relative;
+      top: 40px;
+      border-top: 1px solid #373737;
+      padding: 20px 0 0 20px;
+    }
+    .desktop-only{
+      display: none;
+    }
+    table.contacts{
+      width: 100%;
+      tr{
+        td{
+          p{
+            font-size: 22px;
+          }
+          a{
+            font-size: 22px;
+          }
+          &:nth-child(1){
+            width: 20%;
+            i{
+              margin: 0 auto;
+            }
+          }
+          &:nth-child(2){
+            width: 80%;
+            padding-right: 30px;
+          }
+        }
+      }
+    }
+    .socials{
+      ul{
+        overflow: hidden;
+        top: 20px;
+        margin-bottom: 50px;
+        li{
+          width: 25%;
+          i._over{
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 
-@import "catalog.scss";
+
+@import "_catalog.scss";
+@import "_item_page.scss";
+@import "_checkout.scss";
+@import "_blog.scss";
+@import "_cabinet.scss";
 @import "plugins.css";

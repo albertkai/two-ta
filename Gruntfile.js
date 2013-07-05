@@ -227,7 +227,8 @@ module.exports = function (grunt) {
                     dest: '<%= yeoman.dist %>',
                     src: [
                         '*.{ico,txt}',
-                        '.htaccess'
+                        '.htaccess',
+                        'fonts/*'
                     ]
                 }]
             }
@@ -274,7 +275,7 @@ module.exports = function (grunt) {
         'htmlmin',
         'concat',
         'cssmin',
-        'uglify',
+        //'uglify',
         'copy',
         'usemin'
     ]);
@@ -283,5 +284,9 @@ module.exports = function (grunt) {
         'jshint',
         'test',
         'build'
+    ]);
+
+    grunt.registerTask('first', [
+
     ]);
 };

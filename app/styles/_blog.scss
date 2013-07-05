@@ -1,0 +1,128 @@
+#blog{
+  background: $grey-bg;
+  overflow-y: hidden;
+  #feed{
+    article{
+      position: relative;
+      margin-top: 50px;
+      padding-right: 20px;
+      .title-img{
+        float: left;
+        margin: 0 20px 20px 10px;
+        height: 130px;
+        width: 185px;
+      }
+      .content{
+        h2{
+          margin: 0;
+        }
+        .date{
+          font-family: PT Sans, sans-serif;
+          color: $ultra-light-grey;
+          font-size: 16px;
+        }
+        .preview{
+          color: $dark-grey;
+        }
+        .main-content{
+          clear: both;
+          overflow: hidden;
+          height: 0;
+          @include transition(all .3s cubic-bezier(0.905, -0.445, 0.200, 1.650));
+        }
+        .further{
+          float: right;
+          cursor: pointer;
+
+          color: $dark-grey;
+          i{
+            display: inline-block;
+            position: relative;
+            width: 0;
+            border-top: 9px solid $red;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            margin-left: 5px;
+            top: 0px;
+          }
+        }
+      }
+      &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 3px;
+        height: 130px;
+        background: black;
+        left: 0;
+        top: 0;
+      }
+      &._expanded{
+        .content{
+          .main-content{
+            height: auto;
+          }
+          .further{
+            margin-top: 10px;
+            i{
+              border-top: 0;
+              border-bottom: 9px solid $red;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+  #main-post{
+    margin-top: 80px;
+    position: relative;
+    article{
+      width: 260px;
+      height: 260px;
+      background: black;
+      @include border-radius(130px);
+      @include box-sizing(border-box);
+      color: white;
+      text-align: center;
+      margin: 20px;
+      padding: 35px;
+      .text{
+        color: white;
+
+      }
+      .date{
+        color: $ultra-light-grey;
+      }
+    }
+  }
+  @media screen and (max-width: $iphone) {
+    #feed{
+      article{
+        border-bottom: 1px solid white;
+        padding-bottom: 30px;
+        .title-img{
+          width: 100%;
+          height: auto;
+        }
+        .content{
+          padding: 20px;
+          h2{
+            margin-bottom: 10px;
+          }
+        }
+        &:before{
+          content: '';
+          display: block;
+          position: absolute;
+          width: 0px;
+          height: 130px;
+          background: black;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}

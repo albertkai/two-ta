@@ -19,24 +19,85 @@
 
         <!--Modals-->
 
+        <div id="login-modal" class="r-modal">
 
+            <i class="cross"></i>
+
+
+            <div class="wrap">
+                <div class="tabs-header">
+                    <a data-target="login-tab" class="_active" href="">войти</a>
+                    <a data-target="reg-tab" href="">регистрация</a>
+                </div>
+
+                <div id="login-tab" class="tabs _active">
+
+                    <form action="">
+                        <input type="email" placeholder="e-mail"/>
+                        <input type="password" placeholder="пароль"/>
+                        <input type="submit" value="войти"/>
+                    </form>
+
+                </div>
+
+                <div id="reg-tab" class="tabs">
+
+                    <form action="">
+                        <input type="text" placeholder="имя"/>
+                        <input type="email" placeholder="e-mail"/>
+                        <input type="password" placeholder="пароль"/>
+                        <input type="password" placeholder="повторите пароль"/>
+
+                        <div class="open-id">
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                        <input type="submit" value="войти"/>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
 
 
         <!--modals end-->
 
         <header>
             <div class="c-container">
+                <i id="menu-toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </i>
                 <i id="logo"></i>
                 <nav>
-                    <a href="">каталог</a>
-                    <a href="">инфо</a>
-                    <a href="">о нас</a>
+                    <ul>
+                        <li class="_dropdown-within">
+                            <a href="">каталог</a>
+                            <ul>
+                                <li>ЖЕНСКИЕ СУМКИ</li>
+                                <li>МУЖСКИЕ СУМКИ</li>
+                                <li>АКСЕССУАРЫ</li>
+                                <li>ОБУВЬ</li>
+                            </ul>
+                            <i class="dropdown-arrow closed"></i>
+                        </li>
+                        <li>
+                            <a href="">инфо</a>
+                        </li>
+                        <li>
+                            <a href="">о нас</a>
+                            <i class="dropdown-arrow closed"></i>
+                        </li>
+                        <li id="login-mobile">
+                            <a href="">two-ta club</a>
+                        </li>
+                    </ul>
                 </nav>
                 <div id="login-block">
                     <a href="">two-ta club<i></i></a>
                 </div>
-
-
 
                 <div id="basket-thumb">
                     <div id="basket-round"></div>
@@ -55,7 +116,7 @@
                         <table>
                             <tr>
                                 <td>
-                                    <img src="img/temp/basket_prev_1.png" alt=""/>
+                                    <img src="images/temp/basket_prev_1.png" alt=""/>
                                 </td>
                                 <td>
                                     <h4>Alfred</h4>
@@ -67,7 +128,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="img/temp/basket_prev_2.png" alt=""/>
+                                    <img src="images/temp/basket_prev_2.png" alt=""/>
                                 </td>
                                 <td>
                                     <h4>Alfred</h4>
@@ -109,45 +170,61 @@
 
         <section id="slider">
 
-                <div id="ei-slider" class="ei-slider">
-                    <ul class="ei-slider-large">
-                        <li>
-                            <img src="img/large/1.jpg" alt="image01" />
-                            <div class="ei-title">
-                                <h2>Красота</h2>
-                                <h4>Все просто супер, реально</h4>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="img/large/2.jpg" alt="image02" />
-                            <div class="ei-title">
-                                <h2>Красота</h2>
-                                <h4>Все просто супер, реально</h4>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="img/large/3.jpg" alt="image03"/>
-                            <div class="ei-title">
-                                <h2>Красота</h2>
-                                <h4>Все просто супер, реально</h4>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="img/large/4.jpg" alt="image04"/>
-                            <div class="ei-title">
-                                <h2>Красота</h2>
-                                <h4>Все просто супер, реально</h4>
-                            </div>
-                        </li>
-                    </ul><!-- ei-slider-large -->
-                    <ul class="ei-slider-thumbs">
-                        <li class="ei-slider-element">Current</li>
-                        <li><a href="#">Slide 1</a><img src="img/thumbs/1.jpg" alt="thumb01" /></li>
-                        <li><a href="#">Slide 2</a><img src="img/thumbs/2.jpg" alt="thumb02" /></li>
-                        <li><a href="#">Slide 3</a><img src="img/thumbs/3.jpg" alt="thumb03" /></li>
-                        <li><a href="#">Slide 4</a><img src="img/thumbs/4.jpg" alt="thumb04" /></li>
-                    </ul><!-- ei-slider-thumbs -->
-                </div><!-- ei-slider -->
+            <div id="ei-slider" class="ei-slider">
+                <ul class="ei-slider-large">
+                    <li>
+                        <img src="images/large/6.jpg" alt="image06"/>
+                        <div class="ei-title">
+                            <h2>Passionate</h2>
+                            <h3>Seeker</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/large/1.jpg" alt="image01" />
+                        <div class="ei-title">
+                            <h2>Creative</h2>
+                            <h3>Duet</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/large/2.jpg" alt="image02" />
+                        <div class="ei-title">
+                            <h2>Friendly</h2>
+                            <h3>Devil</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/large/3.jpg" alt="image03"/>
+                        <div class="ei-title">
+                            <h2>Tranquilent</h2>
+                            <h3>Compatriot</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/large/4.jpg" alt="image04"/>
+                        <div class="ei-title">
+                            <h2>Insecure</h2>
+                            <h3>Hussler</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/large/5.jpg" alt="image05"/>
+                        <div class="ei-title">
+                            <h2>Loving</h2>
+                            <h3>Rebel</h3>
+                        </div>
+                    </li>
+                </ul><!-- ei-slider-large -->
+                <ul class="ei-slider-thumbs">
+                    <li class="ei-slider-element">Current</li>
+                    <li><a href="#">Slide 6</a><img src="images/thumbs/6.jpg" alt="thumb06" /></li>
+                    <li><a href="#">Slide 1</a><img src="images/thumbs/1.jpg" alt="thumb01" /></li>
+                    <li><a href="#">Slide 2</a><img src="images/thumbs/2.jpg" alt="thumb02" /></li>
+                    <li><a href="#">Slide 3</a><img src="images/thumbs/3.jpg" alt="thumb03" /></li>
+                    <li><a href="#">Slide 4</a><img src="images/thumbs/4.jpg" alt="thumb04" /></li>
+                    <li><a href="#">Slide 5</a><img src="images/thumbs/5.jpg" alt="thumb05" /></li>
+                </ul><!-- ei-slider-thumbs -->
+            </div><!-- ei-slider -->
 
         </section>
 
@@ -206,22 +283,22 @@
 
                 <div class="item">
                     <p class="heading spacing">ЖЕНСКИЕ СУМКИ</p>
-                    <img src="img/temp/cat_women.jpg" alt="Женские сумки"/>
+                    <img src="images/temp/cat_women.jpg" alt="Женские сумки"/>
                 </div>
 
                 <div class="item">
                     <p class="heading spacing">МУЖСКИЕ СУМКИ</p>
-                    <img src="img/temp/cat_men.jpg" alt="Мужские сумки"/>
+                    <img src="images/temp/cat_men.jpg" alt="Мужские сумки"/>
                 </div>
 
                 <div class="item">
                     <p class="heading spacing">АКСЕССУАРЫ</p>
-                    <img src="img/temp/cat_acc.jpg" alt="Аксессуары"/>
+                    <img src="images/temp/cat_acc.jpg" alt="Аксессуары"/>
                 </div>
 
                 <div class="item">
                     <p class="heading spacing">ОБУВЬ</p>
-                    <img src="img/temp/cat_shoes.jpg" alt="Обувь"/>
+                    <img src="images/temp/cat_shoes.jpg" alt="Обувь"/>
                 </div>
 
             </div>
@@ -236,35 +313,46 @@
 
                     <h3>ПРОИЗВОДСТВО</h3>
 
-                    <table>
-                        <tr>
-                            <td><img src="img/temp/prod_measure.jpg" alt="Дизайн"/></td>
-                            <td>
-                                <h5>ДИЗАЙН</h5>
+                    <ul>
+                        <li>
+                            <img src="images/temp/prod_measure.jpg" alt="Дизайн"/>
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum distinctio
-                                    eligendi excepturi neque perferendis quaerat saepe sapiente similique vitae!</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><img src="img/temp/prod_crop.jpg" alt="Измерение"/></td>
-                            <td>
-                                <h5>ИЗМЕРЕНИЕ</h5>
+                            <div class="wrap">
+                                <div class="cell">
+                                    <h5>ДИЗАЙН</h5>
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum distinctio
-                                    eligendi excepturi neque perferendis quaerat saepe sapiente similique vitae!</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><img src="img/temp/prod_decor.jpg" alt="Декор"/></td>
-                            <td>
-                                <h5>ДЕКОРИРОВАНИЕ</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum distinctio
+                                        eligendi excepturi neque perferendis quaerat saepe sapiente similique vitae!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/temp/prod_crop.jpg" alt="Измерение"/>
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum distinctio
-                                    eligendi excepturi neque perferendis quaerat saepe sapiente similique vitae!</p>
-                            </td>
-                        </tr>
-                    </table>
+                            <div class="wrap">
+                                <div class="cell">
+                                    <h5>ПОКРОЙ</h5>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum distinctio
+                                        eligendi excepturi neque perferendis quaerat saepe sapiente similique vitae!</p>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <img src="images/temp/prod_decor.jpg" alt="Декор"/>
+
+                            <div class="wrap">
+                                <div class="cell">
+                                    <h5>ПОКРОЙ</h5>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum distinctio
+                                        eligendi excepturi neque perferendis quaerat saepe sapiente similique vitae!</p>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
 
                 </div>
 
@@ -329,11 +417,11 @@
 
             <div class="c-container">
 
-                <div class="grid3">
+                <div class="grid3 desktop-only">
 
-                    <h2 class="white">
+                    <h3 class="white">
                         Магазин
-                    </h2>
+                    </h3>
 
                     <a class="white" href="">МУЖСКИЕ СУМКИ</a><br>
                     <a class="white" href="">ЖЕНСКИЕ СУМКИ</a><br>
@@ -342,11 +430,11 @@
 
                 </div>
 
-                <div class="grid3">
+                <div class="grid3 desktop-only">
 
-                    <h2 class="white">
+                    <h3 class="white">
                         Инфо
-                    </h2>
+                    </h3>
 
                     <a class="white" href="">ОПЛАТА</a><br>
                     <a class="white" href="">ДОСТАВКА</a><br>
@@ -354,11 +442,11 @@
 
                 </div>
 
-                <div class="grid3">
+                <div class="grid3 desktop-only">
 
-                    <h2 class="white">
+                    <h3 class="white">
                         О компании
-                    </h2>
+                    </h3>
 
                     <a class="white" href="">МУЖСКИЕ СУМКИ</a><br>
                     <a class="white" href="">ЖЕНСКИЕ СУМКИ</a><br>
@@ -367,61 +455,67 @@
 
                 </div>
 
-                <div>
+                <div class="grid3">
 
-                    <h2 class="white">
+                    <h3 class="white">
                         На связи
-                    </h2>
+                    </h3>
+
+                    <table class="contacts">
+                        <tr>
+                            <td><i class="phone-small"></i></td>
+                            <td>
+                                <p>+7 905 4949494</p>
+                                <p>+7 905 4544545</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="email-small"></i></td>
+                            <td>
+                                <a href="">twota@me.com</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="address-small"></i></td>
+                            <td>
+                                <p>Санкт-Петербург, пр, Московский 22 офис 303</p>
+                            </td>
+                        </tr>
+                    </table>
 
 
 
                 </div>
 
-                <!--<table>
-                    <thead>
-                    <tr>
-                        <td>
+                <div class="socials">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="social facebook _over"></i>
+                                <i class="social facebook_grey _under"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="social vkontakte _over"></i>
+                                <i class="social vkontakte_grey _under"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="social twitter _over"></i>
+                                <i class="social twitter_grey _under"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="social instagram _over"></i>
+                                <i class="social instagram_grey _under"></i>
+                            </a>
+                        </li>
+                    </ul>
 
-                        </td>
-                        <td>
-                            <h2 class="white">
-                                Инфо
-                            </h2>
-                        </td>
-                        <td>
-                            <h2 class="white">
-                                О компании
-                            </h2>
-                        </td>
-                        <td>
-                            <h2 class="white">
-                                На связи
-                            </h2>
-                        </td>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <a class="white" href="">МУЖСКИЕ СУМКИ</a><br>
-                            <a class="white" href="">ЖЕНСКИЕ СУМКИ</a><br>
-                            <a class="white" href="">АКСЕССУАРЫ</a><br>
-                            <a class="white" href="">ЖЕНСКАЯ ОБУВЬ</a>
-                        </td>
-                        <td>
-                            <a class="white" href="">ОПЛАТА</a><br>
-                            <a class="white" href="">ДОСТАВКА</a><br>
-                            <a class="white" href="">БАНКОВСКИЕ КАРТЫ</a>
-                        </td>
-                        <td>
-                            <a class="white" href="">TWO-TA</a><br>
-                            <a class="white" href="">КОНТАКТЫ</a><br>
-                            <a class="white" href="">УСЛОВИЯ ПОКУПКИ</a>
-                        </td>
-                        <td></td>
-                    </tr>
-                    </tbody>
-                </table>-->
+                </div>
 
                 <p id="bottom" class="white"><span>2013 Two-ta</span> leather works. Использование материалов сайта без ссылки как
                     минимум некрасиво=) </p>
@@ -430,23 +524,26 @@
 
         </footer>
 
+
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- build:js scripts/main.js -->
+        <!-- build:js scripts/ui.js -->
         <script src="components/jquery/jquery.js"></script>
+        <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>-->
         <script src="components/underscore/underscore-min.js"></script>
         <script src="components/backbone/backbone-min.js"></script>
-        <script src="scripts/main.js"></script>
-        <script src="scripts/plugins.js"></script>
+        <script src="components/chosen/public/chosen.jquery.min.js"></script>
+        <script src="scripts/custom-plugins.js"></script>
+        <script src="scripts/ui.js"></script>
         <!-- endbuild -->
 
         <!-- build:js(.tmp) scripts/coffee.js -->
         <script src="scripts/hello.js"></script>
         <!-- endbuild -->
 
-        <!-- build:js scripts/plugins.js -->
+        <!-- build:js scripts/custom-plugins.js -->
         <script src="components/sass-bootstrap/js/bootstrap-affix.js"></script>
         <script src="components/sass-bootstrap/js/bootstrap-alert.js"></script>
         <script src="components/sass-bootstrap/js/bootstrap-dropdown.js"></script>

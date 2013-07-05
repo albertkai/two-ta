@@ -1,0 +1,407 @@
+#checkout{
+  #basket{
+    background: $grey-bg;
+    overflow: hidden;
+    min-height: 300px;
+    padding-bottom: 30px;
+    clear: both;
+    .items{
+      padding-bottom: 35px;
+      clear: both;
+      .item{
+        position: relative;
+        width: 100%;
+        height: 120px;
+        clear: both;
+        img{
+          width: 120px;
+        }
+        .reflect, .caption, .price, .quantity{
+          float: left;
+        }
+        .reflect{
+          margin-top: -45px;
+        }
+        .caption{
+          width: 220px;
+          height: 100%;
+          display: table;
+          padding: 0px 20px 0px 70px;
+          @include box-sizing(border-box);
+          .content{
+            display: table-cell;
+            vertical-align: middle;
+            .header{
+              font-size: 28px;
+              color: $dark-grey;
+              &:hover{
+                color: $red;
+              }
+            }
+            .category{
+              font-size: 18px;
+              color: $light-grey;
+              &:hover{
+                color: $dark-grey;
+              }
+            }
+            .articul{
+              color: $ultra-light-grey;
+              font-size: 14px;
+              margin: 0;
+              margin-top: -2px;
+            }
+          }
+        }
+        .quantity{
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          top: 44px;
+          right: 85px;
+          color: $ultra-light-grey;
+          text-align: center;
+          line-height: 28px;
+          border: 2px solid;
+          font-size: 18px;
+          @include border-radius(15px);
+          @include box-sizing(border-box);
+          .arrow-vertical-small{
+            cursor: pointer;
+            opacity: .2;
+            position: absolute;
+            left: 7px;
+            @include transition(opacity .3s ease);
+            &:hover{
+              opacity: .5;
+            }
+            &.up{
+              top: -14px;
+            }
+            &.down{
+              bottom: -14px;
+            }
+          }
+        }
+        .price{
+          line-height: 120px;
+        }
+        .cross{
+          position: absolute;
+          right: 0;
+          top: 47px;
+        }
+      }
+    }
+
+    hr{
+      position: relative;
+      border: 0;
+      z-index: 50;
+      opacity: .3;
+      border-bottom: 1px solid $ultra-light-grey;
+    }
+
+    .total{
+      position: relative;
+      padding: 15px 0;
+      .price{
+        position: absolute;
+        top: 23px;
+        left: 342px;
+        font-size: 35px;
+      }
+      .caption{
+        font-size: 30px;
+        margin-left: 23px;
+        position: relative;
+        top: 3px;
+      }
+    }
+
+    .controls{
+      padding: 25px;
+      .clear{
+        font-size: 26px;
+        color: black;
+        &:hover{
+          border-bottom: 1px dashed $grey;
+        }
+      }
+      button{
+        float: right;
+      }
+    }
+    aside{
+      position: relative;
+      padding-left: 80px;
+      @include box-sizing(border-box);
+      top: 54px;
+      input{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  #order{
+    background: white;
+    h3{
+      margin: 40px 0;
+    }
+    #mobile-total{
+      display: none;
+    }
+    .choose-payment, .choose-delivery{
+      overflow-y: hidden;
+      position: relative;
+      width: 100%;
+      clear: both;
+      margin-top: -20px;
+      .item{
+        width: 33%;
+        float: left;
+        text-align: center;
+        @include box-sizing(border-box);
+        padding: 20px;
+        h5{
+          font-size: 15px;
+        }
+        p{
+          font-size: 15px;
+          line-height: 18px;
+        }
+      }
+    }
+    form{
+      padding: 20px;
+      input[type="text"], input[type="number"], input[type="password"]{
+        @media screen and (max-width: 700px) {
+          width: 100%;
+        }
+      }
+    }
+    #order-card {
+      margin-top: 50px;
+      padding: 30px;
+      @include box-sizing(border-box);
+      @include box-shadow(#ccc 0 0 5px);
+      position: relative;
+      z-index: 3;
+      padding: 15px 30px;
+      hr {
+        margin-bottom: 0;
+      }
+      h4{
+        margin: 15px 0;
+      }
+      .cross {
+        position: absolute;
+        top: 22px;
+        right: 24px;
+      }
+      img {
+        width: 75px;
+      }
+      table {
+        tr {
+          td {
+            &:nth-child(1) {
+              padding: 10px 0;
+              padding-right: 22px;
+            }
+          }
+        }
+      }
+      .count {
+        table {
+          width: 100%;
+          tr {
+            td {
+              text-align: center;
+              .price {
+                font-size: 14px;
+              }
+              &:nth-child(1) {
+                width: 40%;
+                padding-right: 0;
+              }
+              &:nth-child(2) {
+                width: 20%;
+                font-size: 40px;
+                color: $ultra-light-grey;
+              }
+              &:nth-child(3) {
+                width: 40%;
+              }
+            }
+          }
+        }
+      }
+      .total {
+        position: relative;
+        text-align: right;
+        padding: 30px 0;
+        .total-heading {
+          position: absolute;
+          top: 30px;
+          font-family: serveroff;
+          font-size: 19px;
+          color: $ultra-light-grey;
+          font-weight: 600;
+        }
+      }
+    }
+    .controls{
+      overflow: hidden;
+      padding: 20px;
+      padding-bottom: 50px;
+      button{
+        float: right;
+      }
+    }
+  }
+
+
+
+  //iPhone
+
+  @media screen and (max-width: 700px) {
+    .desktop-only {
+      display: none;
+    }
+    #basket {
+      .items {
+        .item {
+          margin-top: 70px;
+          height: 280px;
+          border-bottom: 1px solid white;
+          .reflect {
+            position: relative;
+            left: 50%;
+            margin-left: -60px;
+          }
+          .quantity {
+            top: -15px;
+            left: 10px;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            @include border-radius(30px);
+            font-size: 43px;
+            i{
+              @include scale(1.4);
+              left: 15px;
+              &.plus{
+                top: -42px;
+              }
+              &.minus{
+                left: 18px;
+              }
+            }
+          }
+          .caption {
+            height: auto;
+            position: absolute;
+            top: 120px;
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            .header {
+              font-size: 50px;
+            }
+            .category {
+              font-size: 40px;
+            }
+          }
+          .price {
+            text-align: center;
+            width: 100%;
+          }
+          .cross {
+            top: 0;
+            right: 28px;
+            @include scale(1.5);
+          }
+        }
+      }
+      .total {
+        height: 100px;
+        .price {
+          left: 0;
+          width: 100%;
+          text-align: center;
+          top: 70px;
+        }
+        .caption {
+          top: 0;
+          text-align: center;
+        }
+      }
+      .controls {
+        position: relative;
+        height: 100px;
+        .clear {
+          position: absolute;
+          top: 115px;
+          font-size: 28px;
+          text-align: center;
+        }
+      }
+      aside{
+        display: none;
+      }
+    }
+    #order{
+      .choose-payment, .choose-delivery{
+        .item{
+          float: none;
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .controls{
+        padding: 20px;
+      }
+      #mobile-total{
+        position: relative;
+        display: block;
+        width: 100%;
+        table{
+          width: 100%;
+          tr{
+            td{
+              text-align: center;
+              &:nth-child(1){
+                width: 40%;
+              }
+              &:nth-child(2){
+                width: 20%;
+              }
+              &:nth-child(3){
+                width: 40%;
+              }
+            }
+          }
+        }
+        .total {
+          height: 100px;
+          position: relative;
+          .price {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            top: 40px;
+            font-size: 34px;
+          }
+          .total-heading {
+            top: 0;
+            text-align: center;
+            font-family: serveroff;
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+}
